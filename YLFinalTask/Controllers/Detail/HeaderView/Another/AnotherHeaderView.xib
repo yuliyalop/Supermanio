@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnotherHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-CZ-yA1">
+                    <rect key="frame" x="30" y="0.0" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="1l0-MP-sA3"/>
+                        <constraint firstAttribute="width" constant="461" id="coG-aD-us5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="coG-aD-us5"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yd-LH-JML">
+                    <rect key="frame" x="268" y="0.0" width="62" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="QCH-KR-8Tv"/>
+                    </constraints>
+                    <connections>
+                        <action selector="openCloseTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="CGl-eb-s5D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8yd-LH-JML" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2bA-nT-3nf"/>
+                <constraint firstItem="8yd-LH-JML" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="6eV-D1-AgA"/>
+                <constraint firstAttribute="bottom" secondItem="8yd-LH-JML" secondAttribute="bottom" id="Gfg-Jn-VAK"/>
+                <constraint firstItem="EQG-CZ-yA1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="OqZ-gV-4JR"/>
+                <constraint firstItem="EQG-CZ-yA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ceu-54-1Hp"/>
+                <constraint firstAttribute="bottom" secondItem="EQG-CZ-yA1" secondAttribute="bottom" id="kJV-7H-IbG"/>
+                <constraint firstItem="EQG-CZ-yA1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yGe-iL-cKw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="yGe-iL-cKw"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="openClose" destination="8yd-LH-JML" id="eeU-y8-8Fd"/>
+                <outlet property="title" destination="EQG-CZ-yA1" id="Z2y-Jg-oEf"/>
+            </connections>
+            <point key="canvasLocation" x="223.18840579710147" y="-162.05357142857142"/>
+        </view>
+    </objects>
+</document>

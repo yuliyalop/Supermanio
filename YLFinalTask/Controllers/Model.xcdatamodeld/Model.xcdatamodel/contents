@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Superhero" representedClassName="Superhero" syncable="YES">
+        <attribute name="aliases" optional="YES" attributeType="String"/>
+        <attribute name="alignment" optional="YES" attributeType="String"/>
+        <attribute name="alterEgos" optional="YES" attributeType="String"/>
+        <attribute name="base" optional="YES" attributeType="String"/>
+        <attribute name="combat" optional="YES" attributeType="String"/>
+        <attribute name="eyeColor" optional="YES" attributeType="String"/>
+        <attribute name="firstAppearance" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="hairColor" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="String"/>
+        <attribute name="intelligence" optional="YES" attributeType="String"/>
+        <attribute name="like" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="occupation" optional="YES" attributeType="String"/>
+        <attribute name="placeOfBirth" optional="YES" attributeType="String"/>
+        <attribute name="power" optional="YES" attributeType="String"/>
+        <attribute name="publisher" optional="YES" attributeType="String"/>
+        <attribute name="race" optional="YES" attributeType="String"/>
+        <attribute name="strength" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Superhero" positionX="-63" positionY="-18" width="128" height="373"/>
+    </elements>
+</model>

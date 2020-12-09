@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FirstHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="455"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsm-v9-k19">
+                    <rect key="frame" x="155" y="420" width="0.0" height="30"/>
+                    <attributedString key="attributedText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQB-D7-1RW" userLabel="Like">
+                    <rect key="frame" x="225" y="420" width="61" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="zZa-Hh-x5y"/>
+                    </constraints>
+                    <connections>
+                        <action selector="likeButtonDidtap:" destination="iN0-l3-epB" eventType="touchUpInside" id="KDb-Ds-OFA"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-NL-z6W">
+                    <rect key="frame" x="50" y="40" width="250" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="375" id="Vau-Eb-ool"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hsm-v9-k19" secondAttribute="bottom" constant="5" id="42H-bc-8Dl"/>
+                <constraint firstItem="dkN-NL-z6W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7I7-aJ-fYY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pQB-D7-1RW" secondAttribute="bottom" constant="10" id="C3V-5K-sJx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dkN-NL-z6W" secondAttribute="trailing" constant="50" id="MD1-D6-XAd"/>
+                <constraint firstItem="pQB-D7-1RW" firstAttribute="leading" secondItem="dkN-NL-z6W" secondAttribute="centerX" constant="50" id="WCI-Vc-dKG"/>
+                <constraint firstItem="Hsm-v9-k19" firstAttribute="top" secondItem="dkN-NL-z6W" secondAttribute="bottom" constant="5" id="caT-bZ-wcn"/>
+                <constraint firstItem="pQB-D7-1RW" firstAttribute="top" secondItem="dkN-NL-z6W" secondAttribute="bottom" constant="5" id="d0F-B5-VrN"/>
+                <constraint firstItem="dkN-NL-z6W" firstAttribute="centerX" secondItem="Hsm-v9-k19" secondAttribute="trailing" constant="20" id="g3H-YF-FOE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pQB-D7-1RW" secondAttribute="bottom" constant="5" id="lhy-Jp-X2x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="C3V-5K-sJx"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="dkN-NL-z6W" id="u5Y-7b-2TH"/>
+                <outlet property="like" destination="pQB-D7-1RW" id="mHo-Ok-gzW"/>
+                <outlet property="name" destination="Hsm-v9-k19" id="DUK-Hk-539"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="-12.723214285714285"/>
+        </view>
+    </objects>
+</document>

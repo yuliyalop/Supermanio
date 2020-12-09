@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CoreData fetchedSuperheroes]:CoreData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[Superhero fetchRequest]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ListViewController tableView:numberOfRowsInSection:]:ListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.presenter">
+            </PersistentString>
+            <PersistentString
+               value = "self.presenter.dataSourse.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Loader loadSupermanFromURL:withRequest:arguments:completion:]:Loader.m">
+      </ContextState>
+      <ContextState
+         contextName = "__27-[CoreData addToFavourites]_block_invoke:CoreData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.textLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "self.superhero.name">
+            </PersistentString>
+            <PersistentString
+               value = "self.list.superman.supermanName">
+            </PersistentString>
+            <PersistentString
+               value = "self.superhero">
+            </PersistentString>
+            <PersistentString
+               value = "superhero.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JSONParser parseSupermen:completion:]:JSONParser.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[StarPresenter startLoading]:StarPresenter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "list.superhero">
+            </PersistentString>
+            <PersistentString
+               value = "self.dataSourse">
+            </PersistentString>
+            <PersistentString
+               value = "data.frc">
+            </PersistentString>
+            <PersistentString
+               value = "[CoreData new].fetchedArray">
+            </PersistentString>
+            <PersistentString
+               value = "data.list">
+            </PersistentString>
+            <PersistentString
+               value = "coreData.fetchedArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ListViewController tableView:didSelectRowAtIndexPath:]:ListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superhero">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[LoadingPresenter startLoading]_block_invoke_2:LoadingPresenter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.list">
+            </PersistentString>
+            <PersistentString
+               value = "weakSelf.list.listTable">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SupermanItem initWithDictionary:]:SupermanItem.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
